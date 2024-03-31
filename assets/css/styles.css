@@ -35,11 +35,24 @@ header {
     position:relative;
     float:right;
     bottom: 70px;
-    margin: 0 5.2rem;
+    margin: 0 5rem .2rem;
     height: 34px;
     border-radius: 50px;
 }
 
+.backButton {
+    display:flex;
+    flex-wrap: wrap;
+    position:relative;
+    float:right;
+    bottom: 30px;
+    margin: 0 5rem .2rem;
+    border-radius: 10px;
+    width: 131px;
+    height: 30px;
+    font-size: 1vw;
+    font-style:italic;
+}
 /* Header Style Finish Here */
 
 /* Dark Theme Style Start Here */
@@ -63,7 +76,10 @@ header {
 .dark .themeSwitcher {
     background-color: var(--backGroundEspresso);
 }
-
+.dark .backButton {
+    background-color: var(--backGroundEspresso);
+    color: var(--latteFont);
+}
 /* Dark Theme Style Finish Here */
 
 /* Light Theme Style Start Here */
@@ -88,4 +104,8 @@ header {
     background-color: var(--backGroundLatte);
 }
 
+.light .backButton {
+    background-color: var(--backGroundLatte);
+    color: var(--espressoFont);
+}
 /* Light Theme Style Finish Here */
