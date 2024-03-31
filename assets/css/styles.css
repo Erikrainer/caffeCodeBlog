@@ -1,0 +1,91 @@
+:root {
+    --backGroundLatte: #d6c6b4;
+    --backGroundEspresso: #3A2F2F;
+    --latteFont:#ece0d1;
+    --espressoFont: #38220f;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header Style Start Here */
+
+header {
+    padding: .8rem 1.8rem;
+    color: var(--latteFont);
+    font-size: 1vw;
+}
+
+.caffeTitle {
+    display:flex;
+    justify-content: space-between;
+}
+
+.themeText {
+    padding: 1.5rem 8rem;
+    font-size: 1vw;
+}
+
+.themeSwitcher {
+    display:flex;
+    flex-wrap: wrap;
+    position:relative;
+    float:right;
+    bottom: 70px;
+    margin: 0 5.2rem;
+    height: 34px;
+    border-radius: 50px;
+}
+
+/* Header Style Finish Here */
+
+/* Dark Theme Style Start Here */
+
+.dark {
+    background-color: var(--backGroundEspresso);
+    height: 100vh;
+    color: var(--latteFont);
+  }
+  
+.dark li a {
+    color: var(--latteFont);
+}
+
+.dark header{
+    background-color: var(--backGroundLatte);
+    color: var(--espressoFont);
+    border-bottom: 3px dashed var(--backGroundEspresso);
+}
+
+.dark .themeSwitcher {
+    background-color: var(--backGroundEspresso);
+}
+
+/* Dark Theme Style Finish Here */
+
+/* Light Theme Style Start Here */
+
+.light {
+    background-color: var(--backGroundLatte);
+    color: var(--espressoFont);
+    height: 100vh;
+}
+  
+.light li a {
+    color: var(--espressoFont);
+}
+  
+.light header {
+    background-color: var(--backGroundEspresso);
+    color: var(--latteFont);
+    border-bottom: 3px dashed var(--backGroundLatte);
+}
+
+.light .themeSwitcher {
+    background-color: var(--backGroundLatte);
+}
+
+/* Light Theme Style Finish Here */
