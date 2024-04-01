@@ -24,11 +24,13 @@
 .coffeImg {
     position: relative;
     text-align: right;
+    object-fit: cover;
     bottom: 50px;
     margin: 1rem 3rem;
     padding: 2rem 2rem;
     font-size: 250%;
     width: 600px;
+    height: auto; 
 }
 
 .formBase {
