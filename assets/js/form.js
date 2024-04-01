@@ -1,11 +1,14 @@
 // Submit button start
+
 const username = document.querySelector(".username");
 const title = document.querySelector(".title");
 const content = document.querySelector(".content");
 const submitButton = document.querySelector(".submitButton");
+
 // submit button end
 
 // Starts Here the submit button function
+
 function saveForm(){
     const userForm = {
         username: username.value.trim(),
@@ -27,6 +30,7 @@ function lastUser() {
 }
 
 submitButton.addEventListener("click", function(event){
+    window.location="blog.html";
     event.preventDefault();
     saveForm();
     lastUser();

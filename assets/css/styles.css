@@ -62,7 +62,7 @@ footer {
     bottom: 0;
     width: 100%; 
 }
-.contacts a{
+.contacts a{    
     display: flex;
     position: relative;
     text-decoration: none;
@@ -75,6 +75,7 @@ footer {
 }
 
 .contacts h2{
+    margin-top: .5rem;
     position: relative;
     text-align: center;
     font-size: 1.5vw;
