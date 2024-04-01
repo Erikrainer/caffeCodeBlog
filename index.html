@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="./assets/css/styles.css">
 
-    <title>CaffeCode</title>
+    <title>CaféCode</title>
 
 </head>
 
@@ -22,15 +22,15 @@
 
 <header>
 
-    <div class="caffeTitle">
+    <div class="cafeTitle">
 
-        <h1>CaffeCodeForm</h1>
+        <h1>CaféCodeForm</h1>
 
         <p class="themeText">How do you like your coffe Latte or Espresso</p>
     
     </div>
 
-    <label class="caffeSwitch">
+    <label class="cafeSwitch">
 
         <input type="button" value="☕️" class="themeSwitcher">
 
@@ -40,23 +40,25 @@
 
 <main>
 
-    <figure>
+<section class = "formBase">
+
+    <figure class="coffeImg">
 
         <img src="./assets/images/coffeWhite.png" alt="">
-        
+
     </figure>
 
 <form class="form">
 
-    <h2>Username</h2>
+    <label for="username">Username</label>
 
 <input placeholder="Username" class="username" />
 
-    <h2>Title</h2>
+<label for="title">Title</label>
 
-<input placeholder="Title" class="email" />
+<input placeholder="Title" class="title" />
 
-    <h2>Content</h2>
+    <label for="content">Content</label>
 
 <textarea class="content" placeholder="What's in your mind"></textarea>
 
@@ -64,7 +66,9 @@
 
 <section class="changeHtml">
 
-    <button class="submitButton" onclick=window.location='blog.html'>Submit</button>
+    <button class="submitButton" onclick=window.location="blog.html">Submit</button>
+
+</section>
 
 </section>
 
