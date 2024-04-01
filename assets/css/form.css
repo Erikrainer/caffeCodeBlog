@@ -1,0 +1,22 @@
+:root {
+    --backGroundLatte: #d6c6b4;
+    --backGroundEspresso: #3A2F2F;
+    --latteFont:#ece0d1;
+    --espressoFont: #38220f;
+}
+/* Form Style Start Here */
+form {
+    display: flex;
+    position: relative;
+    text-align: center;
+    flex-direction: column;
+    width: 10%;
+}
+
+.submitButton {
+    
+}
+/* Form Finish Here */
+/* Footer settings Start Here*/
+
+/* Footer settins Finish Here */

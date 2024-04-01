@@ -8,7 +8,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "American Typewriter", serif;
 }
 
 /* Header Style Start Here */
@@ -27,6 +27,7 @@ header {
 .themeText {
     padding: 1.5rem 8rem;
     font-size: 1vw;
+    font-weight: 900;
 }
 
 .themeSwitcher {
@@ -39,21 +40,58 @@ header {
     height: 34px;
     border-radius: 50px;
 }
-
-.backButton {
-    display:flex;
-    flex-wrap: wrap;
-    position:relative;
-    float:right;
-    bottom: 30px;
-    margin: 0 5rem .2rem;
-    border-radius: 10px;
-    width: 131px;
-    height: 30px;
-    font-size: 1vw;
-    font-style:italic;
-}
 /* Header Style Finish Here */
+
+/* Theme Switcher Style Hover */
+
+.themeSwitcher:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffee10;
+  }
+  
+.themeSwitcher:hover {
+    cursor: pointer;
+    color: #ffee10;
+    box-shadow: 0 0 5px #ffee10;
+    text-shadow: 0 0 5px #ffee10;
+}
+
+/* Footer Style Start Here */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+}
+.contacts a{
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    text-decoration-line: underline overline;
+    font-weight: 900;
+    font-size: 1.2vw;
+    margin: .8rem auto;
+    right: 50px;
+    width: 0px;
+}
+
+.contacts h2{
+    position: relative;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.contacts a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffee10;
+  }
+  
+.contacts a:hover {
+    cursor: pointer;
+    color: #ffee10;
+    box-shadow: 0 0 5px #ffee10;
+    text-shadow: 0 0 5px #ffee10;
+  }
+/* Footer Style Finish Here */
 
 /* Dark Theme Style Start Here */
 
@@ -79,6 +117,16 @@ header {
 .dark .backButton {
     background-color: var(--backGroundEspresso);
     color: var(--latteFont);
+}
+
+.dark .contacts {
+    background-color: var(--backGroundLatte);
+    color: var(--espressoFont);
+    border-top: 3px dashed var(--backGroundEspresso);
+}
+
+.dark .contacts a{
+    color: var(--espressoFont);
 }
 /* Dark Theme Style Finish Here */
 
@@ -107,5 +155,15 @@ header {
 .light .backButton {
     background-color: var(--backGroundLatte);
     color: var(--espressoFont);
+}
+
+.light .contacts {
+    background-color: var(--backGroundEspresso);
+    color: var(--latteFont);
+    border-top: 3px dashed var(--backGroundLatte);
+}
+
+.light .contacts a{
+    color: var(--latteFont);
 }
 /* Light Theme Style Finish Here */

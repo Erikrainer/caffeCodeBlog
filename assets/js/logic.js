@@ -5,10 +5,10 @@ let mode = "dark";
 
 themeSwitcher.addEventListener("click", function() {
   if (mode === "dark") {
-    mode = "light";
+    mode = "light"
     container.setAttribute("class", "light");
   }else {
-    mode = "dark";
+    mode = "dark"
     container.setAttribute("class", "dark");
   }
 });
