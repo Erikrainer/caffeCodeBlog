@@ -7,6 +7,9 @@ const submitButton = document.querySelector(".submitButton");
 
 // submit button end
 
+// creating a count to check the condition
+let count = localStorage.getItem("count");
+
 // Starts Here the submit button function
 
 function saveForm(){
@@ -29,8 +32,16 @@ function lastUser() {
 }
 
 submitButton.addEventListener("click", function(event){
+  
     event.preventDefault();
     window.location="blog.html";
+    // creating a count to do the index for the blog.js
+    if(count >= 4){
+        count = 0;
+    }else{
+        count++;
+    }
+        localStorage.setItem("count", count);
     saveForm();
     lastUser();
 });
