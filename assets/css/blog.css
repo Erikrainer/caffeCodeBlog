@@ -39,6 +39,8 @@
     flex-direction: row;
     justify-content: space-between;
     height: 650px;
+    max-width: 25%;
+    /* i change the width */
 }
 .postList {
     margin: 1rem 0 0 4rem;
