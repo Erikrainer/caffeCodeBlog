@@ -7,16 +7,21 @@ const container = document.querySelector(".container");
 // the initial mode will be "dark"
 let mode = "dark";
 let modeType;
+let themeStorage;
 
 saveTheme();
+
 // Below it`s saving the information for the theme at the localstorage, if null dark will be called
-function saveTheme() { 
-  const themeStorage = localStorage.getItem("class", modeType);
+function saveTheme() {
+if(localStorage.getItem("class")  === null){
+  themeStorage = localStorage.setItem("class", "light");
+} 
+  themeStorage = localStorage.getItem("class", modeType);
   container.setAttribute("class", themeStorage);
 }
 // bellow get the event click and create a change for the theme between Latte(light) and Espresso(dark)
 themeSwitcher.addEventListener("click", function() {
-  if (mode === "dark" || modeType === null) {
+  if (mode === "dark") {
     mode = "light"
     localStorage.setItem("class", "light");
   }else {

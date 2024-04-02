@@ -20,7 +20,6 @@ function saveForm(){
 
 function lastUser() {
     const lastUser = JSON.parse(localStorage.getItem("userForm"));
-
     if(lastUser !== null) {
         document.querySelector(".username").innerHTML = userForm.username;
         document.querySelector(".title").innerHTML = userForm.title;
@@ -30,8 +29,8 @@ function lastUser() {
 }
 
 submitButton.addEventListener("click", function(event){
-    window.location="blog.html";
     event.preventDefault();
+    window.location="blog.html";
     saveForm();
     lastUser();
 });

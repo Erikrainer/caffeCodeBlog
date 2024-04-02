@@ -46,14 +46,14 @@ header {
 
 .themeSwitcher:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #ffee10;
+    box-shadow: 0 0 15px white;
   }
   
 .themeSwitcher:hover {
     cursor: pointer;
-    color: #ffee10;
-    box-shadow: 0 0 5px #ffee10;
-    text-shadow: 0 0 5px #ffee10;
+    color: white;
+    box-shadow: 0 0 5px white;
+    text-shadow: 0 0 5px white;
 }
 
 /* Footer Style Start Here */
@@ -83,14 +83,14 @@ footer {
 
 .contacts a:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #ffee10;
+    box-shadow: 0 0 15px white;
   }
   
 .contacts a:hover {
     cursor: pointer;
-    color: #ffee10;
-    box-shadow: 0 0 5px #ffee10;
-    text-shadow: 0 0 5px #ffee10;
+    color: white;
+    box-shadow: 0 0 5px white;
+    text-shadow: 0 0 5px white;
   }
 /* Footer Style Finish Here */
 
@@ -115,7 +115,7 @@ footer {
 .dark .themeSwitcher {
     background-color: var(--backGroundEspresso);
 }
-.dark .backButton {
+.dark .backButton{
     background-color: var(--backGroundEspresso);
     color: var(--latteFont);
 }
@@ -128,6 +128,11 @@ footer {
 
 .dark .contacts a{
     color: var(--espressoFont);
+}
+
+.dark .submitButton {
+    color: var(--espressoFont);
+    background-color: var(--backGroundLatte);
 }
 /* Dark Theme Style Finish Here */
 
@@ -166,5 +171,10 @@ footer {
 
 .light .contacts a{
     color: var(--latteFont);
+}
+
+.light .submitButton {
+    color: var(--latteFont);
+    background-color: var(--backGroundEspresso);
 }
 /* Light Theme Style Finish Here */

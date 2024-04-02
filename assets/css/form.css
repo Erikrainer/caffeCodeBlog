@@ -4,7 +4,9 @@
     --latteFont:#ece0d1;
     --espressoFont: #38220f;
 }
+
 /* Form Style Start Here */
+
 .form {
     display: flex;
     position: relative;
@@ -42,11 +44,31 @@
 .submitButton {
     position: relative;
     text-align: bottom;
-    top:470px;
-    right:170px;
-    
+    top: 470px;
+    right: 180px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 1vw;
 }
+
 /* Form Finish Here */
+
+/* Hover for Submit Button Start*/
+
+.submitButton:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px white;
+  }
+  
+.submitButton:hover {
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 0 5px white;
+    text-shadow: 0 0 5px white;
+  }
+
+/* Hover for Submit Button END */
+
 /* Footer settings Start Here*/
 
 /* Footer settins Finish Here */

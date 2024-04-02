@@ -23,18 +23,48 @@
 
 .backButton:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #ffee10;
+    box-shadow: 0 0 15px white;
   }
   
 .backButton:hover {
     cursor: pointer;
-    color: #ffee10;
-    box-shadow: 0 0 5px #ffee10;
-    text-shadow: 0 0 5px #ffee10;
+    color: white;
+    box-shadow: 0 0 5px white;
+    text-shadow: 0 0 5px white;
 }
 
-/* Footer Style Start Here */
+/* List Style Start Here */
+.blogPost {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 650px;
+}
+.postList {
+    margin: 1rem 0 0 4rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 3px dashed black;
+    padding: 0 5rem 0 5rem;
+    max-height: 80%;
 
+}
+.postList h2 {
+    margin: 3rem 4rem;
+    font-size: 2vw;
+    border-bottom: 2px solid black;
 
+}
 
-/* Footer Style Finish Here */
+.postList p{
+    border-bottom: 2px solid black;
+}
+.postList h3 {
+    margin-top: auto;
+    vertical-align: bottom;
+    border-bottom: 2px solid black;
+}
+
+/* List Style Finish Here */
