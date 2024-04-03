@@ -61,24 +61,20 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%; 
+    text-align: center;
 }
 
 .contacts a{    
-    display: flex;
-    position: relative;
     text-decoration: none;
     text-decoration-line: underline overline;
     font-weight: 900;
     font-size: 1.2vw;
-    margin: .8rem auto;
-    right: 50px;
-    width: 0px;
+    margin: 1rem 1rem 1rem 2rem;
 }
 
 .contacts h2{
     margin-top: .5rem;
     position: relative;
-    text-align: center;
     font-size: 1.5vw;
 }
 

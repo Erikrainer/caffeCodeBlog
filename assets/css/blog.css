@@ -36,11 +36,12 @@
 /* List Style Start Here */
 .blogPost {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    overflow: auto;
     justify-content: space-between;
     height: 650px;
-    max-width: 25%;
-    /* i change the width */
+    width:90%; /* or whatever width you want. */
+ /* or whatever width you want. */
 }
 .postList {
     margin: 1rem 0 0 4rem;
@@ -51,7 +52,6 @@
     border: 3px dashed black;
     padding: 0 5rem 0 5rem;
     max-height: 80%;
-
 }
 .postList h2 {
     margin: 3rem 4rem;
