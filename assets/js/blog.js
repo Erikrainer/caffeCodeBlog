@@ -36,7 +36,6 @@ for (let i = 0; i < 4; i++) {
         localStorage.setItem(storageKey, JSON.stringify(posts[i]));
         blogInfo[i] = posts[i];
     } else {
-        console.log("No post found for index " + i);
     }
 }
 

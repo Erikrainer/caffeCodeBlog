@@ -4,7 +4,6 @@ const username = document.querySelector(".username");
 const title = document.querySelector(".title");
 const content = document.querySelector(".content");
 const submitButton = document.querySelector(".submitButton");
-
 // submit button end
 
 // creating a count to check the condition
@@ -19,6 +18,14 @@ function saveForm(){
         title: title.value.trim(),
         content: content.value.trim()
     };
+    if(userForm.username === ""){
+        alert("Input field cannot be empty");
+        count--;
+        return false;
+    }
+    else{
+        window.location="blog.html";
+    }
     localStorage.setItem("userForm", JSON.stringify(userForm));
 }
 
@@ -28,7 +35,6 @@ function lastUser() {
         document.querySelector(".username").innerHTML = userForm.username;
         document.querySelector(".title").innerHTML = userForm.title;
         document.querySelector(".content").innerHTML = userForm.content;
-        console.log(userForm);
     }
 }
 
@@ -39,11 +45,9 @@ submitButton.addEventListener("click", function(event){
         count++;
     }
     event.preventDefault();
-    window.location="blog.html";
     // creating a count to do the index for the blog.js
     localStorage.setItem("count", JSON.stringify(count));
     saveForm();
     lastUser();
 });
-
 // End here the submit function
