@@ -4,10 +4,10 @@ Module 4 Challenge, no start code, i needed to do a blog that would hold 4 posts
 
 ## Installation
 
+Deployed Link: https://erikrainer.github.io/caffeCodeBlog/
+
 ![Screenshot 2024-04-02 223632](https://github.com/Erikrainer/caffeCodeBlog/assets/160955635/85ece8fc-ba6f-45e8-82f9-30b87c716b29)![Screenshot 2024-04-02 223711](https://github.com/Erikrainer/caffeCodeBlog/assets/160955635/f19e112b-d2a9-4951-9d55-8d5027027919)
 
-
-erikrainer.github.io/caffeCodeBlog/
 
 ## Usage
 
